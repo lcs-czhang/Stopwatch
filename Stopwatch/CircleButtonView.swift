@@ -7,25 +7,32 @@
 
 import SwiftUI
 struct ResetButtonView: View {
+    let buttonColor: Color
+    let label: String
+    let labelColor: Color
     var body: some View {
         ZStack {
             Circle()
-                .foregroundColor(.gray)
                 .frame(width: 100)
                 .opacity(0.3)
+                .foregroundColor(buttonColor)
             Circle()
                 .foregroundColor(.black)
                 .frame(width: 95)
             Circle()
-                .foregroundColor(.gray)
+                .foregroundColor(buttonColor)
                 .frame(width: 90)
                 .opacity(0.3)
-            Text("Reset")
-                .foregroundColor(.white)
+            Text(label)
+                .foregroundColor (labelColor)
                 .font(.title2)
         }
     }
 }
 #Preview {
-    ResetButtonView()
+    ResetButtonView(
+        buttonColor: .gray,
+        label: "Reset",
+        labelColor: .white
+    )
 }

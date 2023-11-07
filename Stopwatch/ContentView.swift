@@ -17,9 +17,17 @@ struct ContentView: View {
                     .font(Font.system(size: 90, weight: .thin))
                     .foregroundColor(.white)
                 HStack{
-                    ResetButtonView()
+                    ResetButtonView(
+                        buttonColor: .gray,
+                        label: "Reset",
+                        labelColor: .white
+                    )
                     Spacer()
-                    StartButtonView()
+                    ResetButtonView(
+                        buttonColor: .green,
+                        label: "Reset",
+                        labelColor: .green
+                    )
                 }
                 Divider()
                 HStack{
