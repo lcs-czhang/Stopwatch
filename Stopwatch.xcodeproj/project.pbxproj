@@ -11,6 +11,8 @@
 		E10AC4982AF52FDD00E6AE9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10AC4972AF52FDD00E6AE9E /* ContentView.swift */; };
 		E10AC49A2AF52FE200E6AE9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10AC4992AF52FE200E6AE9E /* Assets.xcassets */; };
 		E10AC49D2AF52FE200E6AE9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10AC49C2AF52FE200E6AE9E /* Preview Assets.xcassets */; };
+		E15E7CDD2AFAC92000342C16 /* ResetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15E7CDC2AFAC92000342C16 /* ResetButtonView.swift */; };
+		E15E7CDF2AFACAC200342C16 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15E7CDE2AFACAC100342C16 /* StartButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E10AC4972AF52FDD00E6AE9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E10AC4992AF52FE200E6AE9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10AC49C2AF52FE200E6AE9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E15E7CDC2AFAC92000342C16 /* ResetButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetButtonView.swift; sourceTree = "<group>"; };
+		E15E7CDE2AFACAC100342C16 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		E10AC4942AF52FDD00E6AE9E /* Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				E15E7CDE2AFACAC100342C16 /* StartButtonView.swift */,
+				E15E7CDC2AFAC92000342C16 /* ResetButtonView.swift */,
 				E10AC4952AF52FDD00E6AE9E /* StopwatchApp.swift */,
 				E10AC4972AF52FDD00E6AE9E /* ContentView.swift */,
 				E10AC4992AF52FE200E6AE9E /* Assets.xcassets */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15E7CDD2AFAC92000342C16 /* ResetButtonView.swift in Sources */,
+				E15E7CDF2AFACAC200342C16 /* StartButtonView.swift in Sources */,
 				E10AC4982AF52FDD00E6AE9E /* ContentView.swift in Sources */,
 				E10AC4962AF52FDD00E6AE9E /* StopwatchApp.swift in Sources */,
 			);
