@@ -29,47 +29,47 @@ struct ContentView: View {
                         labelColor: .green
                     )
                 }
-                Divider()
-                HStack{
-                    Text("Lap 5")
-                        .foregroundColor(.white)
-                    Spacer()
-                    Text("00:00.98")
-                        .foregroundColor(.white)
+                List{
+                    Group{
+                        HStack{
+                            Text("Lap 5")
+                                .foregroundColor(.white)
+                            Spacer()
+                            Text("00:00.98")
+                                .foregroundColor(.white)
+                        }
+                        HStack{
+                            Text("Lap 4")
+                                .foregroundColor(.red)
+                            Spacer()
+                            Text("00:04.08")
+                                .foregroundColor(.red)
+                        }
+                        HStack{
+                            Text("Lap 3")
+                                .foregroundColor(.green)
+                            Spacer()
+                            Text("00:00.96")
+                                .foregroundColor(.green)
+                        }
+                        HStack{
+                            Text("Lap 2")
+                                .foregroundColor(.white)
+                            Spacer()
+                            Text("00:02.76")
+                                .foregroundColor(.white)
+                        }
+                        HStack{
+                            Text("Lap 1")
+                                .foregroundColor(.white)
+                            Spacer()
+                            Text("00:01.16")
+                                .foregroundColor(.white)
+                        }
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
-                Divider()
-                HStack{
-                    Text("Lap 4")
-                        .foregroundColor(.red)
-                    Spacer()
-                    Text("00:04.08")
-                        .foregroundColor(.red)
-                }
-                Divider()
-                HStack{
-                    Text("Lap 3")
-                        .foregroundColor(.green)
-                    Spacer()
-                    Text("00:00.96")
-                        .foregroundColor(.green)
-                }
-                Divider()
-                HStack{
-                    Text("Lap 2")
-                        .foregroundColor(.white)
-                    Spacer()
-                    Text("00:02.76")
-                        .foregroundColor(.white)
-                }
-                Divider()
-                HStack{
-                    Text("Lap 1")
-                        .foregroundColor(.white)
-                    Spacer()
-                    Text("00:01.16")
-                        .foregroundColor(.white)
-                }
-                Divider()
+                .listStyle(.plain)
             }
             .padding()
         }
