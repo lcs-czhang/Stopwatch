@@ -33,6 +33,8 @@ struct StopwatchApp: App {
                         Text("Timer")
                     }
             }
+            .accentColor(.orange)
+            .preferredColorScheme(.dark)
         }
     }
 }
