@@ -31,51 +31,55 @@ struct ContentView: View {
                 }
                 List{
                     Group{
-                        HStack{
-                            Text("Lap 5")
-                                .foregroundColor(.white)
-                            Spacer()
-                            Text("00:00.98")
-                                .foregroundColor(.white)
+                        Text("Lap 5")
+                            .foregroundColor(.white)
+                            .badge("00:00.98")
+                        Text("Lap 4")
+                            .foregroundColor(.white)
+                            .badge("00:04.08")
+                        Text("Lap 3")
+                            .foregroundColor(.white)
+                            .badge("00:00.96")
+                        Text("Lap 2")
+                            .foregroundColor(.white)
+                            .badge("00:02.76")
+                        Text("Lap 1")
+                            .foregroundColor(.white)
+                            .badge("00:01.16")
                         }
-                        HStack{
-                            Text("Lap 4")
-                                .foregroundColor(.red)
-                            Spacer()
-                            Text("00:04.08")
-                                .foregroundColor(.red)
-                        }
-                        HStack{
-                            Text("Lap 3")
-                                .foregroundColor(.green)
-                            Spacer()
-                            Text("00:00.96")
-                                .foregroundColor(.green)
-                        }
-                        HStack{
-                            Text("Lap 2")
-                                .foregroundColor(.white)
-                            Spacer()
-                            Text("00:02.76")
-                                .foregroundColor(.white)
-                        }
-                        HStack{
-                            Text("Lap 1")
-                                .foregroundColor(.white)
-                            Spacer()
-                            Text("00:01.16")
-                                .foregroundColor(.white)
-                        }
+                        .padding(.top,0.17)
                     }
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
                 .listStyle(.plain)
+                
             }
             .padding()
         }
     }
-}
+
 
 #Preview {
+    TabView {
+    Text ("World Clock")
+        .tabItem {
+            Image (systemName: "globe")
+            Text ("World Clock" )
+        }
+    Text ("Alarm")
+        .tabItem {
+            Image (systemName:"alarm.fill")
+            Text ("Alarm")
+        }
     ContentView()
+        .tabItem {
+            Image (systemName:"stopwatch.fill")
+            Text ("Stopwatch")
+        }
+    Text("Timer")
+        .tabItem {
+            Image(systemName:"timer")
+            Text("Timer")
+        }
+}
 }
