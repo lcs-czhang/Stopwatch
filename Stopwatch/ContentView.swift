@@ -81,5 +81,5 @@ struct ContentView: View {
             Image(systemName:"timer")
             Text("Timer")
         }
-}
+    }
 }
